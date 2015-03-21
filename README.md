@@ -78,7 +78,7 @@ Use
 ```javascript
     createNamedColorSet(name,[colours])
 ```
-    name is the name of the named colour set.
+    Name is the name of the named colour set.
     colours is a optional string of colours, delimited with comma , then delimited with : with the lowercase name and 
     then the hex colour.
 ```javascript
