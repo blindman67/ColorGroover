@@ -76,10 +76,11 @@ Names are case insensitive.
     
 Use
 ```javascript
-    createNamedColorSet(name,[colours])
+    createNamedColorSet(name,[colours]); // [] denotes optional
+    
 ```
-    Name is the name of the named colour set.
-    colours is a optional string of colours, delimited with comma , then delimited with : with the lowercase name and 
+    Name is the name of the named colour set
+    Colours is a optional string of colours, delimited with comma , then delimited with : with the lowercase name and 
     then the hex colour.
 ```javascript
     color.createNamedColorSet("Basic","red:#FF0000,green:#00FF00,blue:#0000FF,white:#FFFFFF,black:#000000")
