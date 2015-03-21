@@ -78,16 +78,16 @@ Use
     createNamedColorSet(name,[colours])
 ```
     name is the name of the named colour set.
-    colours is a optional string of colours, delimited with comma "," then delimited with ":" with the lowercase name and 
+    colours is a optional string of colours, delimited with comma (,) then delimited with (:) with the lowercase name and 
     then the hex colour.
     
     eg 
-    '''
+```
     color.createNamedColorSet("Basic","red:#FF0000,green:#00FF00,blue:#0000FF,white:#FFFFFF,black:#000000")
     color.setActiveNamedColorSet("Basic"); // Basic colour set as active.
     color.setDefaultOutFormat("named");
     var col = color.toDefault([0,0,0]); // returns the string "black"
-    '''
+```
 The named colour returned is the closest named colour that matches 
 Note the named format is still under development. 
 *name is a CSS3 named colour;
