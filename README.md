@@ -2,7 +2,7 @@
 JavaScript object for manipulating colours.
 Sorry for the bad format of this Readme doc as I dont know the formating rules yet.
 
-Please fell free to email me at markspronck@gmail.com if you have any cmment, need help or what ever. Please include ColourGroover in the title so that I can keep you out of the spam folder.
+Please fell free to email me at markspronck@gmail.com if you have any cmment, need help or what ever. Please include ColorGroover in the title so that I can keep you out of the spam folder.
 
 This object provides a set of functions for handeling colours in a javascript environment.
 
@@ -10,24 +10,24 @@ I am using the English spelling of colour but will also create a US spelling of 
 
 Files prefixed with MS (for Mark Spronck) are intended for use with Groover Utilities Linker and have linker directives that can be ignored.
 
-Including the file MSColours.js will create a Local scoped object called Colour that will give access to all the functionality.
+Including the file MSColors.js will create a Local scoped object called Color that will give access to all the functionality.
 
-Soon to come will be full set. Colours.js, Color.js and MSColours.js, MSColor.js.
+Soon to come will be full set. Colors.js, color.js and MSColors.js, MScolor.js.
 
 
 ### To use.
 ```
 // sets the output colour format to HEX eg "#FFFFFF"
-Colour.setDefaultOutFormat("HEX");  
-col = Colour.toDefault("red"); // returns a "#FF0000"
-col = Colour.toDefault("Red"); // returns a "#FF0000"
-col = Colour.toDefault([0,0,255]); // returns a "#0000FF"
-col = Colour.toDefault("rgba(0,255,0,1)"); // returns a "#00FF00"
+color.setDefaultOutFormat("HEX");  
+col = color.toDefault("red"); // returns a "#FF0000"
+col = color.toDefault("Red"); // returns a "#FF0000"
+col = color.toDefault([0,0,255]); // returns a "#0000FF"
+col = color.toDefault("rgba(0,255,0,1)"); // returns a "#00FF00"
 ```
 
 Getting formats.
 ```
-Colour.formats // holds all the default out formats that can be used.
+color.formats // holds all the default out formats that can be used.
 ```
 
 ### List of out formats.   
@@ -80,7 +80,7 @@ PR,PG, and PB are 1/3 of P's area and have a range of P >= 0 and full on at 256*
 Names are case insensitive. 
 Use
 ```
-    createNamedColourSet(name,[colours])
+    createNamedColorSet(name,[colours])
 ```
     name is the name of the named colour set.
     colours is a optional string of colours, delimited with comma "," then delimited with ":" with the lowercase name and 
@@ -88,21 +88,21 @@ Use
     
     eg 
     '''
-    Colour.createNamedColourSet("Basic","red:#FF0000,green:#00FF00,blue:#0000FF,white:#FFFFFF,black:#000000")
-    Colour.setActiveNamedColourSet("Basic"); // Basic colour set as active.
-    Colour.setDefaultOutFormat("named");
-    var col = Colour.toDefault([0,0,0]); // returns the string "black"
+    color.createNamedColorSet("Basic","red:#FF0000,green:#00FF00,blue:#0000FF,white:#FFFFFF,black:#000000")
+    color.setActiveNamedColorSet("Basic"); // Basic colour set as active.
+    color.setDefaultOutFormat("named");
+    var col = color.toDefault([0,0,0]); // returns the string "black"
     '''
 The named colour returned is the closest named colour that matches 
 Note the named format is still under development. 
 *name is a CSS3 named colour;
-*named is a custom Colour name.
+*named is a custom Color name.
 
 
 ### Usefull functions
-Some functions. Colours are returned in the current default colour format. Use Colour.setDefaultOutFormat(format) to set the format
+Some functions. Colors are returned in the current default colour format. Use color.setDefaultOutFormat(format) to set the format
 
-* tweenColour(col,col1,dist)
+* tweenColor(col,col1,dist)
     returns a colour dist between using the RGB colour space. dist >=0 <= 1
     
 * tweenPhotons(col,col1,point)
@@ -117,7 +117,7 @@ Some functions. Colours are returned in the current default colour format. Use C
 * subtract(col,col1)
     Returns col-col1 col subtract col1
     eg 
-    Colour.subtract("yellow","Red") // returns [0,255,0,255] or "green" depending on the default format
+    color.subtract("yellow","Red") // returns [0,255,0,255] or "green" depending on the default format
     
 * multiply(col,col1)
     Multipies col by col1. col1 can be a colour or a float value 
@@ -156,7 +156,7 @@ Some functions. Colours are returned in the current default colour format. Use C
 * contrast(col)
    Gets the contrasting colour Black ot White that is furthests
    
-* tweenColourHSL(col,col1,point)
+* tweenColorHSL(col,col1,point)
     Tweens in HSL space.
     
     
