@@ -6,13 +6,8 @@ Please fell free to email me at markspronck@gmail.com if you have any cmment, ne
 
 This object provides a set of functions for handeling colours in a javascript environment.
 
-I am using the English spelling of colour but will also create a US spelling of the file when I am happy with the code.
+Including the file MSColors.js will create a Local scoped object called color that will give access to all the functionality.
 
-Files prefixed with MS (for Mark Spronck) are intended for use with Groover Utilities Linker and have linker directives that can be ignored.
-
-Including the file MSColors.js will create a Local scoped object called Color that will give access to all the functionality.
-
-Soon to come will be full set. Colors.js, color.js and MSColors.js, MScolor.js.
 
 
 ### To use.
