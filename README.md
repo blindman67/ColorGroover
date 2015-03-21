@@ -73,15 +73,14 @@ PR,PG, and PB are 1/3 of P's area and have a range of P >= 0 and full on at 256*
 
 
 Names are case insensitive. 
-    name is the name of the named colour set.
-    colours is a optional string of colours, delimited with comma , then delimited with : with the lowercase name and 
-    then the hex colour.
     
 Use
 ```javascript
     createNamedColorSet(name,[colours])
 ```
-    eg 
+    name is the name of the named colour set.
+    colours is a optional string of colours, delimited with comma , then delimited with : with the lowercase name and 
+    then the hex colour.
 ```javascript
     color.createNamedColorSet("Basic","red:#FF0000,green:#00FF00,blue:#0000FF,white:#FFFFFF,black:#000000")
     color.setActiveNamedColorSet("Basic"); // Basic colour set as active.
